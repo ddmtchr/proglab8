@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.LoginButtonsController">
+   <children>
+      <AnchorPane prefHeight="40.0" prefWidth="178.0" AnchorPane.bottomAnchor="360.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="421.6" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" layoutY="1.0" prefHeight="35.0" prefWidth="169.0" spacing="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="russianButton" focusTraversable="false" mnemonicParsing="false" onAction="#setRussian" prefHeight="24.0" prefWidth="36.0">
+                     <styleClass>
+                        <String fx:value="languageButton" />
+                        <String fx:value="activeLangButton" />
+                     </styleClass></Button>
+                  <Button fx:id="germanButton" focusTraversable="false" mnemonicParsing="false" onAction="#setGerman" prefHeight="24.0" prefWidth="36.0" styleClass="languageButton" />
+                  <Button fx:id="albanianButton" focusTraversable="false" mnemonicParsing="false" onAction="#setAlbanian" prefHeight="24.0" prefWidth="36.0" styleClass="languageButton" />
+                  <Button fx:id="indianEnglishButton" focusTraversable="false" mnemonicParsing="false" onAction="#setIndianEnglish" prefHeight="24.0" prefWidth="36.0" styleClass="languageButton" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="42.0" prefHeight="83.0" prefWidth="600.0" AnchorPane.bottomAnchor="240.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="42.0">
+         <children>
+            <Label fx:id="labStorageLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="103.0" prefWidth="600.0" text="Лабохранилище" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="126.0" prefHeight="274.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="126.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="274.0" prefWidth="600.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="loginButton" mnemonicParsing="false" onAction="#signUp" prefHeight="40.0" prefWidth="240.0" text="Войти">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="registerButton" mnemonicParsing="false" onAction="#signUp" prefHeight="40.0" prefWidth="240.0" text="Зарегистрироваться">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane prefHeight="39.0" prefWidth="591.0" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,137 @@
+#root {
+    -fx-background-color: #edf1ff;
+}
+
+#rootCanvas {
+    -fx-background-color: #edf1ff33,
+    linear-gradient(from 0.5px 0.0px to 10.5px 0.0px, repeat, lightgrey 1%, transparent 5%),
+    linear-gradient(from 0.0px 0.5px to 0.0px 10.5px, repeat, lightgrey 1%, transparent 5%);
+}
+
+.button,
+.menu-button {
+    -fx-border-color: grey;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-color: #ccffe5;
+    -fx-background-radius: 5px;
+    -fx-background-insets: 2px;
+}
+
+.button:hover,
+.menu-button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #e5ffea;
+}
+
+.button:pressed,
+.menu-button:pressed {
+    -fx-background-color: #bcfdcc;
+}
+
+.languageButton {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+.activeLangButton {
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}
+
+#russianButton {
+    -fx-graphic: url('../images/russianflag.png');
+}
+
+#germanButton {
+    -fx-graphic: url('../images/germanflag.png');
+}
+
+#albanianButton {
+    -fx-graphic: url('../images/albanianflag.png');
+}
+
+#indianEnglishButton {
+    -fx-graphic: url('../images/indianenglishflag.png');
+}
+
+.text-field,
+.choice-box {
+    -fx-border-radius: 5px;
+    -fx-border-color: grey;
+    -fx-border-width: 1;
+    -fx-background-color: #f0f8ff;
+}
+
+.text-field:focused,
+.choice-box:focused {
+    -fx-border-color: #303030;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-width: 2px;
+    -fx-border-radius: 2;
+    -fx-border-color: grey;
+    -fx-padding: 0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #e6e6e6;
+}
+
+.table-view .column-header {
+    -fx-border-color: grey;
+    -fx-border-width: 0 1 2 0px;
+    -fx-background-color: transparent;
+}
+
+.table-cell {
+    -fx-border-color: grey;
+    -fx-border-width: 0 1 0 0px;
+    -fx-alignment: CENTER;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: white;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #f6f6f6;
+}
+
+.table-row-cell:hover {
+    -fx-text-background-color: #707070;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #dadafa;
+    -fx-text-background-color: black;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background {
+    -fx-background-color: #e6e6e6;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb,
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color: white;
+}
+
+.menu-item {
+    -fx-pref-width: 160;
+    -fx-max-width: 500;
+}
+
+.scroll-pane {
+    -fx-border-width: 2px;
+    -fx-border-radius: 2;
+    -fx-border-color: grey;
+    -fx-background-color: -fx-box-border, -fx-background;
+    -fx-background-insets: 0, 1;
+    -fx-padding: 1.0;
+}
+
